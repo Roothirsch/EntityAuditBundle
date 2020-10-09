@@ -1,44 +1,45 @@
 {
-    "name": "roothirsch/entity-audit-bundle",
-    "license": "LGPL-2.1",
-    "keywords": [
-        "Persistence",
-        "Database",
-        "Audit"
-    ],
-    "description": "Audit for Doctrine Entities",
-    "require": {
-        "php": "^5.6|~7.0",
-        "doctrine/dbal": "~2.5",
-        "doctrine/orm": "~2.5"
-    },
-    "require-dev": {
-        "doctrine/doctrine-bundle": "~1.4",
-        "gedmo/doctrine-extensions": "^2.3.1",
-        "matthiasnoback/symfony-dependency-injection-test": "^1.0",
-        "phpunit/phpunit": "^5.5",
-        "symfony/framework-bundle": "~2.8|~3.0",
-        "symfony/var-dumper": "~2.8|~3.0",
-        "friendsofphp/php-cs-fixer": "^1.11"
-    },
-    "conflict": {
-        "gedmo/doctrine-extensions": "<2.3.1",
-        "symfony/framework-bundle": "<2.8",
-        "doctrine/doctrine-bundle": "<1.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "SimpleThings\\EntityAudit\\": "src/SimpleThings/EntityAudit"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "SimpleThings\\EntityAudit\\Tests\\": "tests/SimpleThings/Tests/EntityAudit"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0-dev"
-        }
+  "name": "roothirsch/entity-audit-bundle",
+  "type": "symfony-bundle",
+  "license": "LGPL-2.1",
+  "keywords": [
+    "Persistence",
+    "Database",
+    "Audit"
+  ],
+  "description": "Audit for Doctrine Entities",
+  "require": {
+    "php": "^5.6|~7.0",
+    "doctrine/dbal": "~2.5",
+    "doctrine/orm": "~2.5"
+  },
+  "require-dev": {
+    "doctrine/doctrine-bundle": "~1.4",
+    "gedmo/doctrine-extensions": "^2.3.1",
+    "matthiasnoback/symfony-dependency-injection-test": "^1.0",
+    "phpunit/phpunit": "^5.5",
+    "symfony/framework-bundle": "~2.8|~3.0",
+    "symfony/var-dumper": "~2.8|~3.0",
+    "friendsofphp/php-cs-fixer": "^1.11"
+  },
+  "conflict": {
+    "gedmo/doctrine-extensions": "<2.3.1",
+    "symfony/framework-bundle": "<2.8",
+    "doctrine/doctrine-bundle": "<1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SimpleThings\\EntityAudit\\": "src/SimpleThings/EntityAudit"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SimpleThings\\EntityAudit\\Tests\\": "tests/SimpleThings/Tests/EntityAudit"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    }
+  }
 }
